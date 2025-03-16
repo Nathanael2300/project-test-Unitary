@@ -1,8 +1,6 @@
 import { expect } from 'chai';
 import  calcularFatorial  from '../lista-exercicios-function/ex08/index.js';
 
-
-
 export default function minhaFuncao(input) {
     return parseFloat(input);
 };
@@ -24,5 +22,5 @@ describe('calculareFactorial', () => {
         const expectedResult = calcularFatorial(10);
         expect(expectedResult).to.equal(3628800);
         expect(expectedResult).to.be.greaterThan(40000);
-    })
+    });
 });

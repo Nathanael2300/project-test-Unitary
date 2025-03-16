@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import  calcTemperatura  from '../lista-exercicios-function/ex02/index.js'
+import { calcTemperatura } from '../lista-exercicios-function/ex02/index.js'
 
 export default function minhaFuncao(input) {
     return parseFloat(input);
