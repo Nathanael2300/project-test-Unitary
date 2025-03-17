@@ -1,7 +1,6 @@
 import { expect } from 'chai';
 import inverterNumero   from '../lista-exercicios-function/ex05/index.js';
 
-
 describe('invertNumber', () => {
     it('Deve retonar a inversão do numero 234', () => {
         const expectedResult = inverterNumero(234);

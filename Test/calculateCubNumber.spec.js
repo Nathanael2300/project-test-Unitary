@@ -1,6 +1,5 @@
 import { expect } from 'chai';
 import calcularCuboNumero from '../lista-exercicios-function/ex01/index.js';
-
 describe('Função cubeNumber', () => {
     it('Deve retornar o 1000 do número 10', () => {
         const expectedResult = calcularCuboNumero(10);

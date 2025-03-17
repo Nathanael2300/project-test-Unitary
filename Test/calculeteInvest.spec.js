@@ -1,8 +1,6 @@
 import { expect } from 'chai';
 import calcularInvestimento from '../lista-exercicios-function/ex07/index.js';
 
-    
-
 export default function minhaFuncao(input) {
     return parseFloat(input);
 };

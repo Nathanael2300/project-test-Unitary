@@ -21,6 +21,6 @@ describe('calculareFactorial', () => {
     it('Deve retornar 3628800 do numero 10', () => {
         const expectedResult = calcularFatorial(10);
         expect(expectedResult).to.equal(3628800);
-        expect(expectedResult).to.be.greaterThan(40000);
+        expect(expectedResult).to.be.greaterThan(40000); 
     });
 });

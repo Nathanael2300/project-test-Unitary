@@ -1,8 +1,6 @@
 import { expect } from 'chai';
 import {contarOcorrencias} from '../lista-exercicios-function/ex09/index.js';
 
-
-
 export default function minhaFuncao(input) {
     return parseFloat(input);
 };
