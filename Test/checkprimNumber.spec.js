@@ -6,14 +6,20 @@ export default function minhaFuncao(input) {
 };
 
 describe('checkprimNumber', () => {
-    it('Deve retornar que o numero 2 é par', () => {
-        const expectedResult = verificarNumeropar(2);
-        expect(expectedResult).to.equal(`Esse numero é par`);
-        expect(expectedResult).to.not.be.oneOf(['Número inválido', undefined, null, 1, 3]);
+    context('Quando o número é 2', () => {
+        it('Deve retornar que o número 2 é par', () => {
+            const expectedResult = verificarNumeropar(2);
+            expect(expectedResult).to.be.a('string')
+                .and.to.equal('Esse numero é par')
+                .and.to.not.be.oneOf(['Número inválido', undefined, null, 1, 3]);
+        });
     });
-
-    it('Deve retornar que o numero 3 é impar', () => {
-        const expectedResult = verificarNumeropar(3);
-        expect(expectedResult).to.equal('Esse numero é impar');
+    
+    context('Quando o número é 3', () => {
+        it('Deve retornar que o número 3 é ímpar', () => {
+            const expectedResult = verificarNumeropar(3);
+            expect(expectedResult).to.be.a('string').and.to.equal('Esse numero é impar');
+        });
     });
+    
 });

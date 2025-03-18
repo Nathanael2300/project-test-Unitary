@@ -11,8 +11,7 @@ describe('checkingAge', () => {
             const age = 18;
             const expectedResult = checkAge(age);
             
-            expect(expectedResult).to.be.a('string')
-            .and.to.be.eq('Voce é maior de idade')
+            expect(expectedResult).to.be.a('string').and.to.be.eq('Voce é maior de idade')
             
         });
     });
@@ -22,8 +21,7 @@ describe('checkingAge', () => {
             const age = 17;
             const expectedResult = checkAge(age);
     
-            expect(expectedResult).to.be.a('string')
-            .and.to.be.eq('Voce é menor de idade')
+            expect(expectedResult).to.be.a('string').and.to.be.eq('Voce é menor de idade')
         });
     });
 });

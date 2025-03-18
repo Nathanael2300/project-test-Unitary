@@ -6,18 +6,27 @@ export default function minhaFuncao(input) {
 }
 
 describe('countVowels', () => {
-    it('Deve retornar que na string "ola tudo bem" tem 5 vogais', () => {
-        const expectedResult = contarVogais('Ola tudo bem');
-        expect(expectedResult).to.be.equal(5);
+    context('Contagem de vogais em strings', () => {
+        context('Quando a string é "Ola tudo bem"', () => {
+            it('Deve retornar que há 5 vogais', () => {
+                const expectedResult = contarVogais('Ola tudo bem');
+                expect(expectedResult).to.be.a('number').and.to.be.equal(5);
+            });
+        });
+    
+        context('Quando a string é "O amor é lindo"', () => {
+            it('Deve retornar que há 6 vogais', () => {
+                const expectedResult = contarVogais('O amor é lindo');
+                expect(expectedResult).to.be.a('number').and.to.be.equal(6);
+            });
+        });
+    
+        context('Quando a string é "quero me tornar QA"', () => {
+            it('Deve retornar que há 7 vogais', () => {
+                const expectedResult = contarVogais('quero me tornar QA');
+                expect(expectedResult).to.be.a('number').and.to.equal(7);
+            });
+        });
     });
-
-    it('Deve retornar que na string "O amor é lindo" tem 6 vogais', () => {
-        const expectedResult = contarVogais('O amor é lindo');
-        expect(expectedResult).to.be.equal(6);
-    });
-
-    it('Deve retornar que na string "quero me tornar QA" tem 7 vogais', () => {
-        const expectedResult = contarVogais('quero me tornar QA');
-        expect(expectedResult).to.equal(7);
-    })
+    
 });
