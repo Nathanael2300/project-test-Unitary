@@ -1,10 +1,6 @@
 import { expect } from 'chai';
 import calcularInvestimento from '../lista-exercicios-function/ex07/index.js';
 
-export default function minhaFuncao(input) {
-    return parseFloat(input);
-};
-
 describe('calculeteInvest', () => {
     context('Quando o investimento é de 5000 com taxa de 5% por 3 anos', () => {
         it('Deve retornar 5796.37', () => {
@@ -32,5 +28,4 @@ describe('calculeteInvest', () => {
                 .and.not.to.equal(503132);
         });
     });
-    
 });

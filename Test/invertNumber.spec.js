@@ -1,28 +1,21 @@
 import { expect } from 'chai';
-import inverterNumero   from '../lista-exercicios-function/ex05/index.js';
+import inverterNumero from '../lista-exercicios-function/ex05/index.js';
 
-describe('invertNumber', () => {
+describe('Função inverterNumero', () => {
     context('Inversão de números', () => {
-        context('Quando o número é 234', () => {
-            it('Deve retornar a inversão como "432"', () => {
-                const expectedResult = inverterNumero(234);
-                expect(expectedResult).to.be.a('string').and.to.be.equal('432');
-            });
+        it('Deve retornar "432" ao inverter 234', () => {
+            const resultado = inverterNumero(234);
+            expect(resultado).to.be.a('string').and.to.equal('432');
         });
-    
-        context('Quando o número é 529', () => {
-            it('Deve retornar a inversão como "925"', () => {
-                const expectedResult = inverterNumero(529);
-                expect(expectedResult).to.be.a('string').and.to.equal('925');
-            });
+
+        it('Deve retornar "925" ao inverter 529', () => {
+            const resultado = inverterNumero(529);
+            expect(resultado).to.be.a('string').and.to.equal('925');
         });
-    
-        context('Quando o número é 726', () => {
-            it('Deve retornar a inversão como "627"', () => {
-                const expectedResult = inverterNumero(726);
-                expect(expectedResult).to.be.a('string').and.to.equal('627');
-            });
+
+        it('Deve retornar "627" ao inverter 726', () => {
+            const resultado = inverterNumero(726);
+            expect(resultado).to.be.a('string').and.to.equal('627');
         });
     });
-    
 });

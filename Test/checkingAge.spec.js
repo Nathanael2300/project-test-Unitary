@@ -1,27 +1,24 @@
 import { expect } from 'chai';
-import  checkAge  from '../lista-exercicios-function/ex11/index.js';
+import checkAge from '../lista-exercicios-function/ex11/index.js';
 
-export default function minhaFuncao(input) {
-    return parseFloat(input);
-};
-
-describe('checkingAge', () => {
+describe('Função checkAge', () => {
     context('Quando a idade é 18 anos ou mais', () => {
-        it('Deve retornar a mensagem "Voce é maior de idade" caso o usuario estiver 18 anos ou mais', () => {
-            const age = 18;
-            const expectedResult = checkAge(age);
-            
-            expect(expectedResult).to.be.a('string').and.to.be.eq('Voce é maior de idade')
-            
+        it('Deve retornar "Você é maior de idade"', () => {
+            const idade = 18;
+            const resultado = checkAge(idade);
+
+            expect(resultado).to.be.a('string')
+                .and.to.equal('Você é maior de idade');
         });
     });
 
-    context('Quando a idade é menos de 18 ', () => {
-        it('Deve retornar a mensagem "Voce é menor de idade" caso o ususario estiver 17 anos ou menos', () => {
-            const age = 17;
-            const expectedResult = checkAge(age);
-    
-            expect(expectedResult).to.be.a('string').and.to.be.eq('Voce é menor de idade')
+    context('Quando a idade é menor que 18 anos', () => {
+        it('Deve retornar "Você é menor de idade"', () => {
+            const idade = 17;
+            const resultado = checkAge(idade);
+
+            expect(resultado).to.be.a('string')
+                .and.to.equal('Você é menor de idade');
         });
     });
 });
