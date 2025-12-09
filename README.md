@@ -38,7 +38,7 @@ npm test
 
 ## 🎯 Objetivo
 Treinar a criação de testes unitários, cobrindo:
-- Cenários positivos e negativos
+- Cenários positivos 
 - Regras de negócio
 - Retornos esperados de funções
 - Tratamento de erros
