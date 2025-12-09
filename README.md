@@ -14,7 +14,7 @@ Este projeto contém testes unitários desenvolvidos com **Mocha** e **Chai**, c
 ## 📁 Estrutura do projeto
 ```
 project/
- ├── src/            # Funções testadas
+ ├── lista-exercicios-function/            # Funções testadas
  ├── test/           # Testes unitários
  ├── package.json
  └── README.md
